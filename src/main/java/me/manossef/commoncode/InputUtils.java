@@ -15,6 +15,10 @@ public class InputUtils {
         return askYesNoQuestion(scanner::nextLine, y, n);
     }
 
+    public static boolean askYesNoQuestion(Supplier<String> interviewer) {
+        return askYesNoQuestion(interviewer, "y", "n");
+    }
+
     public static boolean askYesNoQuestion(Supplier<String> interviewer, String y, String n) {
         String answer = interviewer.get();
         while(!answer.equalsIgnoreCase(y) && !answer.equalsIgnoreCase(n)) {
