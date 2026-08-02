@@ -74,73 +74,65 @@ public class MyArrays {
 
     public static boolean[][] deepCopyOf(boolean[][] original) {
         boolean[][] result = new boolean[original.length][];
-        for(int i = 0; i < original.length; i++) {
+        for(int i = 0; i < original.length; i++)
             result[i] = Arrays.copyOf(original[i], original[i].length);
-        }
         return result;
     }
 
     public static byte[][] deepCopyOf(byte[][] original) {
         byte[][] result = new byte[original.length][];
-        for(int i = 0; i < original.length; i++) {
+        for(int i = 0; i < original.length; i++)
             result[i] = Arrays.copyOf(original[i], original[i].length);
-        }
         return result;
     }
 
     public static char[][] deepCopyOf(char[][] original) {
         char[][] result = new char[original.length][];
-        for(int i = 0; i < original.length; i++) {
+        for(int i = 0; i < original.length; i++)
             result[i] = Arrays.copyOf(original[i], original[i].length);
-        }
         return result;
     }
 
     public static short[][] deepCopyOf(short[][] original) {
         short[][] result = new short[original.length][];
-        for(int i = 0; i < original.length; i++) {
+        for(int i = 0; i < original.length; i++)
             result[i] = Arrays.copyOf(original[i], original[i].length);
-        }
         return result;
     }
 
     public static int[][] deepCopyOf(int[][] original) {
         int[][] result = new int[original.length][];
-        for(int i = 0; i < original.length; i++) {
+        for(int i = 0; i < original.length; i++)
             result[i] = Arrays.copyOf(original[i], original[i].length);
-        }
         return result;
     }
 
     public static long[][] deepCopyOf(long[][] original) {
         long[][] result = new long[original.length][];
-        for(int i = 0; i < original.length; i++) {
+        for(int i = 0; i < original.length; i++)
             result[i] = Arrays.copyOf(original[i], original[i].length);
-        }
         return result;
     }
 
     public static float[][] deepCopyOf(float[][] original) {
         float[][] result = new float[original.length][];
-        for(int i = 0; i < original.length; i++) {
+        for(int i = 0; i < original.length; i++)
             result[i] = Arrays.copyOf(original[i], original[i].length);
-        }
         return result;
     }
 
     public static double[][] deepCopyOf(double[][] original) {
         double[][] result = new double[original.length][];
-        for(int i = 0; i < original.length; i++) {
+        for(int i = 0; i < original.length; i++)
             result[i] = Arrays.copyOf(original[i], original[i].length);
-        }
         return result;
     }
 
     public static <T> T[][] deepCopyOf(T[][] original) {
+        @SuppressWarnings("unchecked")
         T[][] result = (T[][]) Array.newInstance(original.getClass().getComponentType(), original.length);
-        for(int i = 0; i < original.length; i++) {
+        for(int i = 0; i < original.length; i++)
             result[i] = Arrays.copyOf(original[i], original[i].length);
-        }
         return result;
     }
 
